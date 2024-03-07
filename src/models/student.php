@@ -1,5 +1,5 @@
 <?php
-class Aluno
+class Student
 {
     protected $name;
     protected $registration;
@@ -10,9 +10,13 @@ class Aluno
         $this->course = $course;
     }
 
-    public function getAlunoInfo(){
-        return `course: $this->course </br>
-                name: $this->name </br>
-                registration: $this->registration </br>`;
+    public function getRegistration(){
+        return $this->registration;
+    }
+    public function getCourse(){
+        return $this->course;
+    }
+    public function getName(){
+        return $this->name;
     }
 }

@@ -1,8 +1,8 @@
 <?php
-function array_any($array, $function)
+function array_any($array, $registration)
 {
     foreach ($array as $current) {
-        if ($function($current)) {
+        if ($current->getRegistration() == $registration) {
             return true;
         }
     }
