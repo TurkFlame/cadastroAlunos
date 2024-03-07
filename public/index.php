@@ -10,7 +10,9 @@
 
 <body>
     <?php 
-    require_once "../src/components/navbar.php";
+        require_once "../src/components/navbar.php";
+
+        //Optei por uma lógica que sempre que o usuário tenta acessar a tela de login, ele desloga o usuário.
         $navbar = new Navbar();
         echo $navbar->returnNavbar();
         if(isset($_SESSION)){

@@ -1,5 +1,5 @@
 <?php
-
+//Optei por usar um componente sendo a navbar para poder aproveitá-la 
 class Navbar
 {
     public function returnNavbar()
